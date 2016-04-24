@@ -14,3 +14,6 @@ compile project':loaderlib'
 ## 1,screenshot for loading net pictures. 
 ![Screenshot](https://github.com/lchli/ListItemAsyncDataLoader/raw/master/LoaderLibrary/screenshot/shot_net_picturelist.png)
 
+## 1,screenshot for loading net phone info list. 
+![Screenshot](https://github.com/lchli/ListItemAsyncDataLoader/raw/master/LoaderLibrary/screenshot/shot_phone_info_list.png)
+
