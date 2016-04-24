@@ -1,4 +1,4 @@
-package com.lchli.loaderlibrary.example;
+package com.lchli.loaderlibrary.example.netPictureList;
 
 /**
  * Created by lchli on 2016/4/23.

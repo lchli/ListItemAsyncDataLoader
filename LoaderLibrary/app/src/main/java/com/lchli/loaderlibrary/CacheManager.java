@@ -3,6 +3,8 @@ package com.lchli.loaderlibrary;
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;
 
+import com.lchli.loaderlibrary.example.phoneInfoList.PhoneInfoResponse;
+
 public class CacheManager {
 
     private static int getCacheSize() {
@@ -22,5 +24,14 @@ public class CacheManager {
     public static LruCache<Object, Bitmap> getBitmapMemoryCacher() {
         return appBitmapMemCache;
     }
+
+    public static final LruCache<Object, PhoneInfoResponse.PhoneInfo> appPhoneInfoMemCache = new LruCache<Object, PhoneInfoResponse.PhoneInfo>(
+            getCacheSize()) {
+        @Override
+        protected int sizeOf(Object key, PhoneInfoResponse.PhoneInfo value) {
+            return value.memorySize();
+        }
+    };
+
 
 }

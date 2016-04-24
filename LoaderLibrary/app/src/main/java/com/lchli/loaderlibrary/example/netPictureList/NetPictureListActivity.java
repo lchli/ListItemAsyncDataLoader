@@ -1,11 +1,14 @@
-package com.lchli.loaderlibrary.example;
+package com.lchli.loaderlibrary.example.netPictureList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import com.apkfuns.logutils.LogUtils;
 import com.lchli.loaderlibrary.R;
+import com.lchli.loaderlibrary.example.phoneInfoList.PhoneInfoListActivity;
 import com.lchli.loaderlibrary.okhttpWraper.OkHttpRequestUtils;
 import com.lchli.loaderlibrary.okhttpWraper.OkUiThreadCallback;
 
@@ -25,6 +28,13 @@ public class NetPictureListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net_picture_list);
         listView = (ListView) findViewById(R.id.listView);
+        findViewById(R.id.btOpenPhoneList).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), PhoneInfoListActivity.class);
+                NetPictureListActivity.this.startActivity(it);
+            }
+        });
         mNetPictureListAdapter = new NetPictureListAdapter(null);
         listView.setAdapter(mNetPictureListAdapter);
 
