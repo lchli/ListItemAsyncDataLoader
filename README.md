@@ -19,11 +19,12 @@ compile project':loaderlib'
 
 ## Usage. 
 ```groovy
-1)create your loader extends ListItemAsyncDataLoader.Implements the method getDataLogic(...) to do your loadData logic.
+1)Create your loader extends ListItemAsyncDataLoader.
+Implements the method getDataLogic(...) to do your loadData logic.
 
-2)you also can Override these cache method to Implements your cache.such as getMemoryCache(...),getDiskCache(...),etc.
+2)You also can override these cache method to implements your cache,such as getMemoryCache(...),getDiskCache(...),etc.
 
-3)example:
+3)Example:
 package com.lchli.loaderlibrary.example.netPictureList;
 
 import android.graphics.Bitmap;
