@@ -7,6 +7,10 @@ If you are building with Gradle, import loaderlib module,then add the following 
 
 ```groovy
 compile project':loaderlib'
+or
+depedencies {
+  compile 'com.github.lchli:ListItemLoader:1.0.0'
+}
 ```
 
 
